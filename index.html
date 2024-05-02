@@ -3,8 +3,33 @@ layout: default
 title: "Home"
 ---
 
-{% if site.show_excerpts %}
-  {% include home.html %}
-{% else %}
-  {% include archive.html title="Posts" %}
-{% endif %}
+
+<article>\
+  <section>\
+    <div  class="about-header">\
+      <img src="images/me.png" alt="au" height="50"/>\
+      <h3>Hello, I'm  Ömercan.</h3>\
+    </div>\
+    \
+    <span> I live in Ankara. Passionate iOS Developer. I worked as a Aplication Development Specialist 
+      in Yasar University Open And Distance Learning Center. Right now I'm constantly trying to improve myself in iOS development.
+    </span>\
+  </section>\
+\
+  <hr />\
+\
+  <section>\
+    <h3>Experience</h3>\
+    \{% include timeline.html %\}\
+  </section>\
+\
+  <section>\
+    <h3>Interests</h3>\
+    <h4>Travel</h4>\
+    <p>\  
+      Traveling allows us to transcend boundaries, immerse ourselves in diverse cultures, and collect moments that become cherished memories. It's an endless adventure, promising new experiences, flavors, and landscapes waiting to be discovered around every corner. 
+      Whether it's the bustling streets of a vibrant city or the serene beauty of a remote beach, each journey unfolds a tapestry of stories and leaves an indelible mark on our souls.
+    </p>
+
+  </section>\
+</article>}
